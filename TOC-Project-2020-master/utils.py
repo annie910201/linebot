@@ -18,16 +18,16 @@ def send_text_message(reply_token, text):
 def send_image_url(id, img_url):
     pass
 """
-# def send_button_message(reply_token, text, buttons,title):
-#     line_bot_api = LineBotApi(channel_access_token)
-#     message = TemplateSendMessage(
-#         alt_text = 'button template',
-#         template = ButtonsTemplate(
-#             title = title, 
-#             text = text,
-#             actions = buttons
-#         )
-#     )
-#     line_bot_api = LineBotApi(reply_token, message)
-#     return "OK"
+def send_button_message(reply_token, text, buttons,title):
+    line_bot_api = LineBotApi(channel_access_token)
+    message = TemplateSendMessage(
+        alt_text = 'button template',
+        template = ButtonsTemplate(
+            title = title, 
+            text = text,
+            actions = buttons
+        )
+    )
+    line_bot_api = LineBotApi(reply_token, message)
+    return "OK"
 
